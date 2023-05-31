@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="p1">hiii</h1>
+    <p class="p1">welcome</p>
+    <h2 class="p1">this is sushma</h2>
+    <button ondblclick="print()">click</button>
+    
+</body>
+<script src="java3.js"></script>
+<script>
+document.write("sushma")
+function print(){
+var data=document.getElementsByClassName("p1")
+for(let i=0;i<3;i++)
+console.log(data[i].innerHTML)
+}
+localStorage.setItem("name","sushma")
+console.log(localStorage.getItem("name"))
+localStorage.setItem("surname","narala")
+console.log(localStorage.getItem("surname"))
+localStorage.setItem("name","chandu")
+document.write(localStorage.getItem("name"))
+function sus(){
+    this.name="sushma",
+    this.email="sushma@gmail.com"
+}
+sus.prototype.num=3456
+let a=new sus();
+console.log(a.name)
+console.log(a.num)
+</script>
+</html>
